@@ -119,6 +119,14 @@
     modal.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+
+    modalContent.querySelectorAll('.modal-gallery img, .idea-image').forEach(img => {
+      const markIfWide = () => {
+        if (img.naturalWidth / img.naturalHeight > 1.8) img.classList.add('gallery-wide');
+      };
+      if (img.complete) markIfWide();
+      else img.addEventListener('load', markIfWide);
+    });
   }
 
   function closeModal() {

@@ -541,6 +541,10 @@ section { position: relative; }
   background: var(--overlay);
 }
 
+.modal-gallery img.gallery-wide {
+  grid-column: 1 / -1;
+}
+
 .idea-heading {
   font-weight: 800;
   color: var(--ink);
