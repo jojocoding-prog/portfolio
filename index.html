@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joanna Zhang — Digital Marketing & Communications</title>
+<meta name="description" content="Joanna Zhang is a digital marketing and communications expert based in Dubai, with 12+ years across Ogilvy, Brunswick Group, and leading global brands.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="nav">
+  <a href="#top" class="nav-logo">JZ</a>
+  <nav class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="top" class="hero">
+    <div class="hero-bg-shape"></div>
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Digital Marketing &amp; Communications</p>
+      <h1 class="hero-title">Joanna<br>Zhang</h1>
+      <p class="hero-lede">
+        12+ years turning complex stories into campaigns that move markets —
+        for brands from <span>Rolex</span> to <span>HSBC</span> to <span>Xpeng</span>,
+        across Ogilvy, Brunswick Group, and in-house at GF Securities and
+        Hong Kong Disneyland. Based in Dubai, working globally.
+      </p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">See the work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">14</span><span class="stat-label">Featured campaigns</span></div>
+      <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Years in industry</span></div>
+      <div class="stat"><span class="stat-num">4</span><span class="stat-label">Continents served</span></div>
+    </div>
+  </section>
+
+  <section id="work" class="work">
+    <div class="section-head">
+      <h2>Key Projects</h2>
+      <p>A selection of campaigns and strategy work across tech, finance, tourism, and beyond.</p>
+    </div>
+
+    <div class="filters" role="tablist" aria-label="Filter projects by industry">
+      <button class="filter-btn active" data-filter="All">All</button>
+      <button class="filter-btn" data-filter="Tech">Tech</button>
+      <button class="filter-btn" data-filter="Finance">Finance</button>
+      <button class="filter-btn" data-filter="Tourism">Tourism</button>
+      <button class="filter-btn" data-filter="Others">Others</button>
+    </div>
+
+    <div id="project-grid" class="project-grid"></div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-inner">
+      <h2>About</h2>
+      <p>
+        Hi, I'm Joanna Zhang, a digital marketing and communication expert
+        based in Dubai. Over the past 12 years, I have worked for top
+        international agencies, including Ogilvy and Brunswick Group, and
+        held brand and marketing positions at GF Securities and Hong Kong
+        Disneyland. My expertise spans multiple industries, including
+        technology, tourism, finance, education, and retail.
+      </p>
+      <a href="https://www.linkedin.com/in/joannazhang1213/" target="_blank" rel="noopener" class="btn btn-ghost">
+        Connect on LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <h2>Let's work together</h2>
+      <p>Open to new opportunities and collaborations — reach out any time.</p>
+      <div class="contact-links">
+        <a href="mailto:joannazhang1213@gmail.com" class="contact-link">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">joannazhang1213@gmail.com</span>
+        </a>
+        <a href="https://wa.me/971585853855" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">+971 58 585 3855</span>
+        </a>
+        <a href="https://www.linkedin.com/in/joannazhang1213/" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">/in/joannazhang1213</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Joanna Zhang. Built with care.</p>
+</footer>
+
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true">
+    <button class="modal-close" data-close aria-label="Close">&times;</button>
+    <div id="modal-content" class="modal-content"></div>
+  </div>
+</div>
+
+<script src="js/projects-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
