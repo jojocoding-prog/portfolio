@@ -10,8 +10,12 @@
     return div.innerHTML;
   }
 
+  function imgSrc(item) {
+    return typeof item === 'string' ? item : item.src;
+  }
+
   function renderCard(project, index) {
-    const cover = project.images[0] || '';
+    const cover = imgSrc(project.images[0] || '');
     return `
       <article class="project-card" data-index="${index}" data-industry="${project.industry}">
         ${cover ? `<div class="project-card-img"><img src="${cover}" alt="${escapeHtml(project.brand)} cover" loading="lazy"></div>` : ''}
@@ -74,11 +78,23 @@
     `;
   }
 
+  function renderGalleryItem(item, brand) {
+    const src = imgSrc(item);
+    const isWide = typeof item === 'object' && item.wide;
+    const link = typeof item === 'object' ? item.link : null;
+    const imgTag = `<img src="${src}" alt="${escapeHtml(brand)} detail" loading="lazy"${isWide ? ' class="gallery-wide"' : ''}>`;
+    if (link) {
+      return `<a class="gallery-video-link" href="${escapeHtml(link)}" target="_blank" rel="noopener">${imgTag}<span class="gallery-video-badge">&#9654; Watch video on LinkedIn</span></a>`;
+    }
+    return imgTag;
+  }
+
   function openModal(index) {
     const p = PROJECTS[index];
     const [cover, ...rest] = p.images;
+    const coverSrc = imgSrc(cover || '');
     modalContent.innerHTML = `
-      ${cover ? `<img class="modal-hero-img" src="${cover}" alt="${escapeHtml(p.brand)}">` : ''}
+      ${coverSrc ? `<img class="modal-hero-img" src="${coverSrc}" alt="${escapeHtml(p.brand)}">` : ''}
       <div class="modal-body">
         <div class="modal-meta">
           <span>${escapeHtml(p.brand)}</span>
@@ -111,7 +127,7 @@
         <div class="modal-section">
           <h4>Gallery</h4>
           <div class="modal-gallery">
-            ${rest.map(src => `<img src="${src}" alt="${escapeHtml(p.brand)} detail" loading="lazy">`).join('')}
+            ${rest.map(item => renderGalleryItem(item, p.brand)).join('')}
           </div>
         </div>` : ''}
       </div>

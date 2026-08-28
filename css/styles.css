@@ -545,6 +545,41 @@ section { position: relative; }
   grid-column: 1 / -1;
 }
 
+.gallery-video-link {
+  position: relative;
+  display: block;
+  grid-column: 1 / -1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery-video-link img {
+  margin: 0;
+  transition: transform .4s var(--ease), filter .3s var(--ease);
+}
+
+.gallery-video-link:hover img {
+  transform: scale(1.02);
+  filter: brightness(0.85);
+}
+
+.gallery-video-badge {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: rgba(23,22,28,0.82);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  backdrop-filter: blur(4px);
+}
+
 .idea-heading {
   font-weight: 800;
   color: var(--ink);

@@ -74,7 +74,11 @@ const PROJECTS = [
     "images": [
       "assets/images/project-01-0.jpg",
       "assets/images/project-01-1.jpg",
-      "assets/images/project-01-2.jpg"
+      {
+        "src": "assets/images/project-01-2.jpg",
+        "link": "https://www.linkedin.com/feed/update/urn:li:activity:6915210590307184641/",
+        "wide": true
+      }
     ],
     "extra_sections": []
   },
