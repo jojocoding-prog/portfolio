@@ -541,6 +541,22 @@ section { position: relative; }
   background: var(--overlay);
 }
 
+.idea-heading {
+  font-weight: 800;
+  color: var(--ink);
+  margin: 20px 0 8px;
+}
+
+.idea-heading:first-child { margin-top: 0; }
+
+.idea-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 4px 0 16px;
+  background: var(--overlay);
+}
+
 .modal-tags {
   display: flex;
   gap: 8px;

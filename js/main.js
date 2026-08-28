@@ -54,6 +54,26 @@
     return html;
   }
 
+  function extraSectionBlock(section) {
+    return `
+      <div class="modal-section">
+        <h4>${escapeHtml(section.title)}</h4>
+        ${section.items.map(item => {
+          if (item.type === 'image') {
+            return `<img class="idea-image" src="${item.src}" alt="${escapeHtml(section.title)} visual" loading="lazy">`;
+          }
+          if (item.type === 'heading') {
+            return `<p class="idea-heading">${escapeHtml(item.text)}</p>`;
+          }
+          if (item.type === 'bulleted_list' || item.type === 'numbered_list') {
+            return `<ul><li>${escapeHtml(item.text)}</li></ul>`;
+          }
+          return `<p>${escapeHtml(item.text).replace(/\n/g, '<br>')}</p>`;
+        }).join('')}
+      </div>
+    `;
+  }
+
   function openModal(index) {
     const p = PROJECTS[index];
     const [cover, ...rest] = p.images;
@@ -81,6 +101,7 @@
           <h4>Solution</h4>
           ${solutionBlock(p.solution)}
         </div>` : ''}
+        ${(p.extra_sections || []).map(extraSectionBlock).join('')}
         ${p.results.length ? `
         <div class="modal-section">
           <h4>Results</h4>

@@ -36,7 +36,8 @@ const PROJECTS = [
     "images": [
       "assets/images/project-00-0.jpg",
       "assets/images/project-00-1.jpg"
-    ]
+    ],
+    "extra_sections": []
   },
   {
     "name": "Transform NDB’s Reports to Engaging Stories and Campaigns",
@@ -74,7 +75,8 @@ const PROJECTS = [
       "assets/images/project-01-0.jpg",
       "assets/images/project-01-1.jpg",
       "assets/images/project-01-2.jpg"
-    ]
+    ],
+    "extra_sections": []
   },
   {
     "name": "Upgrade Impact46’s Narrative and Communication",
@@ -93,15 +95,42 @@ const PROJECTS = [
       {
         "type": "text",
         "text": "I led the digital team to conduct a digital audit to evaluate the current status of Impact46 and its peers and create a digital communication strategy with content themes and campaign ideas based on our insights."
-      },
-      {
-        "type": "text",
-        "text": "Idea 2. Saudi Women in Business"
       }
     ],
     "results": [],
     "images": [
       "assets/images/project-02-0.jpg"
+    ],
+    "extra_sections": [
+      {
+        "title": "Campaign Ideas",
+        "items": [
+          {
+            "type": "heading",
+            "text": "Idea 1. Partner for Growth"
+          },
+          {
+            "type": "text",
+            "text": "Highlight Impact46 Office Hour program which provides advisory and support to start-ups with One-on-one sessions"
+          },
+          {
+            "type": "image",
+            "src": "assets/images/project-02-extra0-0.jpg"
+          },
+          {
+            "type": "heading",
+            "text": "Idea 2. Saudi Women in Business"
+          },
+          {
+            "type": "text",
+            "text": "Use infographics showing the situation and progress of female entrepreneurs in Saudi Arabia and quotes of Basmah as a female partner to advocate women's entrepreneurship"
+          },
+          {
+            "type": "image",
+            "src": "assets/images/project-02-extra0-1.jpg"
+          }
+        ]
+      }
     ]
   },
   {
@@ -133,7 +162,8 @@ const PROJECTS = [
     "images": [
       "assets/images/project-03-0.jpg",
       "assets/images/project-03-1.jpg"
-    ]
+    ],
+    "extra_sections": []
   },
   {
     "name": "Drive Traffic to Studio City’s Grand Opening",
@@ -171,7 +201,8 @@ const PROJECTS = [
     "images": [
       "assets/images/project-04-0.jpg",
       "assets/images/project-04-1.jpg"
-    ]
+    ],
+    "extra_sections": []
   },
   {
     "name": "Launch an Integrated Campaign for Venetian Macao",
@@ -205,7 +236,8 @@ const PROJECTS = [
     "images": [
       "assets/images/project-05-0.jpg",
       "assets/images/project-05-1.jpg"
-    ]
+    ],
+    "extra_sections": []
   },
   {
     "name": "Build Rolex & Tudor’s Brand on Chinese Social Media",
@@ -258,7 +290,8 @@ const PROJECTS = [
       "assets/images/project-06-2.jpg",
       "assets/images/project-06-3.jpg",
       "assets/images/project-06-4.jpg"
-    ]
+    ],
+    "extra_sections": []
   },
   {
     "name": "Structure the Digital Communication Function for Hongkong Land",
@@ -288,7 +321,8 @@ const PROJECTS = [
     "images": [
       "assets/images/project-07-0.jpg",
       "assets/images/project-07-1.jpg"
-    ]
+    ],
+    "extra_sections": []
   },
   {
     "name": "Expand HSBC HK’s Customer Base",
@@ -331,8 +365,12 @@ const PROJECTS = [
       "The newly launched WeChat account gained 3,000 followers in the first three months without any paid ads."
     ],
     "images": [
-      "assets/images/project-08-0.jpg"
-    ]
+      "assets/images/project-08-0.jpg",
+      "assets/images/project-08-1.jpg",
+      "assets/images/project-08-2.jpg",
+      "assets/images/project-08-3.jpg"
+    ],
+    "extra_sections": []
   },
   {
     "name": "Raise DiDi’s Profile among Global Media and Investors",
@@ -365,8 +403,11 @@ const PROJECTS = [
     ],
     "images": [
       "assets/images/project-09-0.jpg",
-      "assets/images/project-09-1.jpg"
-    ]
+      "assets/images/project-09-1.jpg",
+      "assets/images/project-09-2.jpg",
+      "assets/images/project-09-3.jpg"
+    ],
+    "extra_sections": []
   },
   {
     "name": "Introduce Xpeng to U.S. Audiences on Its Listing Day",
@@ -379,18 +420,26 @@ const PROJECTS = [
     "industry": "Tech",
     "link": "",
     "challenge": [
-      "Xpeng Motors, a China-based electric vehicle maker and Tesla competitor was set to make a splash by listing on the NYSE. We were tasked with developing a strategy that would introduce this brand favourably to key American audiences.",
-      "We built a comprehensive digital strategy that would launch the brand in the U.S. and worked closely with the client, their legal team, and NYSE to coordinate details and approvals. ",
-      "On Listing Day, I managed Xpeng’s channels, amplifying NYSE’s content and launching targeted social media campaigns to raise visibility among EV influencers, media, and financial audiences."
+      "Xpeng Motors, a China-based electric vehicle maker and Tesla competitor was set to make a splash by listing on the NYSE. We were tasked with developing a strategy that would introduce this brand favourably to key American audiences."
     ],
-    "solution": [],
+    "solution": [
+      {
+        "type": "text",
+        "text": "We built a comprehensive digital strategy that would launch the brand in the U.S. and worked closely with the client, their legal team, and NYSE to coordinate details and approvals. "
+      },
+      {
+        "type": "text",
+        "text": "On Listing Day, I managed Xpeng’s channels, amplifying NYSE’s content and launching targeted social media campaigns to raise visibility among EV influencers, media, and financial audiences."
+      }
+    ],
     "results": [
       "The monthlong campaign on Twitter, LinkedIn and Google generated nearly 1M impressions from key audiences, with the engagement rate on video content outperforming platform benchmarks by 8 times."
     ],
     "images": [
       "assets/images/project-10-0.jpg",
       "assets/images/project-10-1.jpg"
-    ]
+    ],
+    "extra_sections": []
   },
   {
     "name": "Build Huawei’s SEA Regional Content Hub",
@@ -417,7 +466,8 @@ const PROJECTS = [
     "images": [
       "assets/images/project-11-0.jpg",
       "assets/images/project-11-1.jpg"
-    ]
+    ],
+    "extra_sections": []
   },
   {
     "name": "Develop a Strategy Playbook for the Ford Foundation Team",
@@ -448,7 +498,8 @@ const PROJECTS = [
     "images": [
       "assets/images/project-12-0.jpg",
       "assets/images/project-12-1.jpg"
-    ]
+    ],
+    "extra_sections": []
   },
   {
     "name": "Localize Stanford Medicine’s Content to Reach Healthcare Professionals in China",
@@ -487,6 +538,7 @@ const PROJECTS = [
     ],
     "images": [
       "assets/images/project-13-0.jpg"
-    ]
+    ],
+    "extra_sections": []
   }
 ];
