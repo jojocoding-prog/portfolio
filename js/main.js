@@ -138,7 +138,7 @@
 
     modalContent.querySelectorAll('.modal-gallery img, .idea-image').forEach(img => {
       const markIfWide = () => {
-        if (img.naturalWidth / img.naturalHeight > 1.8) img.classList.add('gallery-wide');
+        if (img.naturalWidth / img.naturalHeight > 1.6) img.classList.add('gallery-wide');
       };
       if (img.complete) markIfWide();
       else img.addEventListener('load', markIfWide);
