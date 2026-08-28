@@ -536,8 +536,9 @@ section { position: relative; }
 
 .modal-gallery img {
   border-radius: 12px;
-  aspect-ratio: 4/3;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  background: var(--overlay);
 }
 
 .modal-tags {
